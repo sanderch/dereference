@@ -1,0 +1,4149 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"additionalProperties": false,
+"definitions": {
+".n1:Estimate": {
+"$ref": "#/definitions/n1:Estimate"
+},
+"n1:AccessDegree": {
+"enum": [
+"Unknown",
+"FullAccessabilityFromBehind",
+"LimitedAccessabilityFromBehind",
+"NoAccessabilityFromBehind"
+],
+"type": "string"
+},
+"n1:Address": {
+"additionalProperties": false,
+"properties": {
+"n1:City": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Country": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PostalCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Street": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:City",
+"n1:Country",
+"n1:PostalCode",
+"n1:Street"
+],
+"type": "object"
+},
+"n1:ArrayOfDetailResult": {
+"additionalProperties": false,
+"properties": {
+"n1:DetailResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:DetailResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:DetailResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfDocument": {
+"additionalProperties": false,
+"properties": {
+"n1:Document": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:Document"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:Document"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfFrameAlignmentResult": {
+"additionalProperties": false,
+"properties": {
+"n1:FrameAlignmentResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:FrameAlignmentResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:FrameAlignmentResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfIncludedComponentResult": {
+"additionalProperties": false,
+"properties": {
+"n1:IncludedComponentResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:IncludedComponentResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:IncludedComponentResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfMachineDamageDetailResult": {
+"additionalProperties": false,
+"properties": {
+"n1:MachineDamageDetailResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:MachineDamageDetailResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:MachineDamageDetailResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfMaterialResult": {
+"additionalProperties": false,
+"properties": {
+"n1:MaterialResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:MaterialResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:MaterialResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfNote": {
+"additionalProperties": false,
+"properties": {
+"n1:Note": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:Note"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:Note"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfPaintResult": {
+"additionalProperties": false,
+"properties": {
+"n1:PaintResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:PaintResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:PaintResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfPhoto": {
+"additionalProperties": false,
+"properties": {
+"n1:Photo": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:Photo"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:Photo"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfPlasticResult": {
+"additionalProperties": false,
+"properties": {
+"n1:PlasticResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:PlasticResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:PlasticResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfString": {
+"additionalProperties": false,
+"properties": {
+"n1:string": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfSummaryResult": {
+"additionalProperties": false,
+"properties": {
+"n1:SummaryResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:SummaryResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:SummaryResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:ArrayOfWorkResult": {
+"additionalProperties": false,
+"properties": {
+"n1:WorkResult": {
+"anyOf": [
+{
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:WorkResult"
+}
+]
+},
+{
+"items": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:WorkResult"
+}
+]
+},
+"type": "array"
+}
+]
+}
+},
+"type": "object"
+},
+"n1:BodyRates": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyRate": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:D35Rate": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:GlassDiscount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:float"
+}
+},
+"type": "object"
+},
+"n1:GlassRate": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:IncidentalMaterial": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:float"
+}
+},
+"type": "object"
+},
+"n1:MechanicalRate": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:OtherRate": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:PartsDiscount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:float"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionRate": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyRate",
+"n1:D35Rate",
+"n1:GlassDiscount",
+"n1:GlassRate",
+"n1:IncidentalMaterial",
+"n1:MechanicalRate",
+"n1:OtherRate",
+"n1:PartsDiscount",
+"n1:RustProtectionRate"
+],
+"type": "object"
+},
+"n1:BodyWorkshop": {
+"additionalProperties": false,
+"properties": {
+"n1:AgreementCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ArrivalDate": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:date"
+}
+},
+"type": "object"
+}
+]
+},
+"n1:CompletedDate": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:date"
+}
+},
+"type": "object"
+}
+]
+},
+"n1:ContactInfo": {
+"$ref": "#/definitions/n1:ContactCard"
+},
+"n1:ContactPerson": {
+"$ref": "#/definitions/n1:ContactCardWithExternalId"
+},
+"n1:DmsCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Rates": {
+"$ref": "#/definitions/n1:BodyRates"
+},
+"n1:RepairStartDate": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:date"
+}
+},
+"type": "object"
+}
+]
+}
+},
+"required": [
+"n1:AgreementCode",
+"n1:ArrivalDate",
+"n1:CompletedDate",
+"n1:ContactInfo",
+"n1:ContactPerson",
+"n1:DmsCode",
+"n1:RepairStartDate"
+],
+"type": "object"
+},
+"n1:CalculationResult": {
+"additionalProperties": false,
+"properties": {
+"n1:DetailResults": {
+"$ref": "#/definitions/n1:ArrayOfDetailResult"
+},
+"n1:FrameAlignmentResults": {
+"$ref": "#/definitions/n1:ArrayOfFrameAlignmentResult"
+},
+"n1:MachineDamageDetailResults": {
+"$ref": "#/definitions/n1:ArrayOfMachineDamageDetailResult"
+},
+"n1:MaterialResults": {
+"$ref": "#/definitions/n1:ArrayOfMaterialResult"
+},
+"n1:PaintResults": {
+"$ref": "#/definitions/n1:ArrayOfPaintResult"
+},
+"n1:PlasticResults": {
+"$ref": "#/definitions/n1:ArrayOfPlasticResult"
+},
+"n1:SummaryResults": {
+"$ref": "#/definitions/n1:ArrayOfSummaryResult"
+},
+"n1:Totals": {
+"$ref": "#/definitions/n1:CalculationResultTotals"
+},
+"n1:WorkResults": {
+"$ref": "#/definitions/n1:ArrayOfWorkResult"
+}
+},
+"required": [
+"n1:DetailResults",
+"n1:FrameAlignmentResults",
+"n1:MachineDamageDetailResults",
+"n1:MaterialResults",
+"n1:PaintResults",
+"n1:PlasticResults",
+"n1:SummaryResults",
+"n1:Totals",
+"n1:WorkResults"
+],
+"type": "object"
+},
+"n1:CalculationResultTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:DetailResultSubTotals": {
+"$ref": "#/definitions/n1:DetailResultSubTotals"
+},
+"n1:PaintResultSubTotals": {
+"$ref": "#/definitions/n1:PaintResultSubTotals"
+},
+"n1:TotalExcludingVat": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:WorkResultSubTotals": {
+"$ref": "#/definitions/n1:WorkResultSubTotals"
+}
+},
+"required": [
+"n1:DetailResultSubTotals",
+"n1:PaintResultSubTotals",
+"n1:TotalExcludingVat",
+"n1:WorkResultSubTotals"
+],
+"type": "object"
+},
+"n1:CarPapersType": {
+"items": {
+"enum": [
+"Default",
+"ServiceBook",
+"VSGCertificate"
+],
+"type": "string"
+},
+"type": "array"
+},
+"n1:ContactCard": {
+"additionalProperties": false,
+"properties": {
+"n1:Address1": {
+"$ref": "#/definitions/n1:Address"
+},
+"n1:Address2": {
+"$ref": "#/definitions/n1:Address"
+},
+"n1:Email": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Fax": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Name": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:OtherInfo": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Phone1": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Phone2": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:Address1",
+"n1:Email",
+"n1:Fax",
+"n1:Name",
+"n1:OtherInfo",
+"n1:Phone1",
+"n1:Phone2"
+],
+"type": "object"
+},
+"n1:ContactCardWithExternalId": {
+"additionalProperties": false,
+"properties": {
+"n1:Address1": {
+"$ref": "#/definitions/n1:Address"
+},
+"n1:Address2": {
+"$ref": "#/definitions/n1:Address"
+},
+"n1:Email": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ExternalId": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Fax": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Name": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:OtherInfo": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Phone1": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Phone2": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:Address1",
+"n1:Email",
+"n1:ExternalId",
+"n1:Fax",
+"n1:Name",
+"n1:OtherInfo",
+"n1:Phone1",
+"n1:Phone2"
+],
+"type": "object"
+},
+"n1:ContentTypes": {
+"enum": [
+"Body",
+"Glass",
+"Paint",
+"MachineDamage",
+"Basic",
+"Unknown"
+],
+"type": "string"
+},
+"n1:Customer": {
+"additionalProperties": false,
+"properties": {
+"n1:ContactInfo": {
+"$ref": "#/definitions/n1:ContactCard"
+},
+"n1:ContactPerson": {
+"$ref": "#/definitions/n1:ContactCard"
+},
+"n1:DmsCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Inspector": {
+"$ref": "#/definitions/n1:ContactCardWithExternalId"
+},
+"n1:InsuranceCompanyCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:ContactInfo",
+"n1:DmsCode",
+"n1:InsuranceCompanyCode"
+],
+"type": "object"
+},
+"n1:Damage": {
+"additionalProperties": false,
+"properties": {
+"n1:AgeDeductionPercent": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:float"
+}
+},
+"type": "object"
+},
+"n1:AirbagMissing": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Alarm": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:ApprovedRentalCarDays": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:ArrivalDate": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:date"
+}
+},
+"type": "object"
+}
+]
+},
+"n1:ClaimNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:DamageDate": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:date"
+}
+},
+"type": "object"
+}
+]
+},
+"n1:Description": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:DescriptionFromInsuranceCompany": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ExcessAmount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:ExcessPercent": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:float"
+}
+},
+"type": "object"
+},
+"n1:FailingSparePartGroupNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:FailingSparePartGroupText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:InspectionDate": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:date"
+}
+},
+"type": "object"
+}
+]
+},
+"n1:InsuranceNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:InsuranceType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:InsuranceType"
+}
+},
+"type": "object"
+},
+"n1:NumberOfDamages": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OnlyDismountedParts": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:OnlyGluedGlassOrChipRepair": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:PaymentGuaranteed": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:RentalCar": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:VatCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:VatCode"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:AgeDeductionPercent",
+"n1:AirbagMissing",
+"n1:Alarm",
+"n1:ApprovedRentalCarDays",
+"n1:ArrivalDate",
+"n1:ClaimNumber",
+"n1:DamageDate",
+"n1:Description",
+"n1:DescriptionFromInsuranceCompany",
+"n1:ExcessAmount",
+"n1:ExcessPercent",
+"n1:FailingSparePartGroupNumber",
+"n1:FailingSparePartGroupText",
+"n1:InspectionDate",
+"n1:InsuranceNumber",
+"n1:InsuranceType",
+"n1:NumberOfDamages",
+"n1:OnlyDismountedParts",
+"n1:OnlyGluedGlassOrChipRepair",
+"n1:PaymentGuaranteed",
+"n1:RentalCar",
+"n1:VatCode"
+],
+"type": "object"
+},
+"n1:DetailResult": {
+"additionalProperties": false,
+"properties": {
+"n1:Periods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PositionNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RowType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:DetailResultRowType"
+}
+},
+"type": "object"
+},
+"n1:SubjobNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:Text": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:Periods",
+"n1:PositionNumber",
+"n1:RowType",
+"n1:SubjobNumber"
+],
+"type": "object"
+},
+"n1:DetailResultRowType": {
+"enum": [
+"PeriodsBodyRate",
+"PeriodsMechanical",
+"PeriodsOther",
+"PeriodsGlass"
+],
+"type": "string"
+},
+"n1:DetailResultSubTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkPeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods"
+],
+"type": "object"
+},
+"n1:Document": {
+"additionalProperties": false,
+"properties": {
+"n1:DocumentData": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:base64Binary"
+}
+},
+"type": "object"
+},
+"n1:Filename": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Name": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:DocumentData",
+"n1:Filename",
+"n1:Name"
+],
+"type": "object"
+},
+"n1:EquipmentFlags": {
+"items": {
+"enum": [
+"Default",
+"AutomaticTransmission",
+"Sunroof",
+"TowingHook",
+"AutomaticClimateControl",
+"ParkControl" {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MakeText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Mileage": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MileageUnit": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:MileageUnits"
+}
+},
+"type": "object"
+},
+"n1:ModelFamilyText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ModelNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:ModelText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ModelTextFromIntegration": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ModelYear": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:NumberOfColors": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:NumberOfDoors": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherInfo": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Owner": {
+"$ref": "#/definitions/n1:ContactCard"
+},
+"n1:PaintCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+"#/definitions/xs:long"
+}
+},
+"type": "object"
+},
+"n1:ExtraInformations": {
+"$ref": "#/definitions/n1:ArrayOfString"
+},
+"n1:Notes": {
+"$ref": "#/definitions/n1:ArrayOfNote"
+},
+"n1:PaintOrderTime": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PaintWorkshop": {
+"$ref": "#/definitions/n1:PaintWorkshop"
+},
+"n1:Photos": {
+"$ref": "#/definitions/n1:ArrayOfPhoto"
+},
+"n1:PlasticWorkshop": {
+"$ref": "#/definitions/n1:PlasticWorkshop"
+},
+"n1:Redemption": {
+"$ref": "#/definitions/n1:Redemption"
+},
+"n1:Status": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:EstimateStatus"
+}
+},
+"type": "object"
+},
+"n1:Tender": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Vehicle": {
+"$ref": "#/definitions/n1:EstimateVehicle"
+},
+"n1:WorkOrderNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:WorkshopCalculation": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkshop",
+"n1:CabasCaseIndex",
+"n1:CabasDataVersion",
+"n1:CalculatedDateTime",
+"n1:CalculationId",
+"n1:CalculationResult",
+"n1:ContentType",
+"n1:CreatedDateTime",
+"n1:Customer",
+"n1:Damage",
+"n1:Documents",
+"n1:EstimateIdentity",
+"n1:ExtraInformations",
+"n1:Notes",
+"n1:PaintOrderTime",
+"n1:PaintWorkshop",
+"n1:Photos",
+"n1:PlasticWorkshop",
+"n1:Status",
+"n1:Tender",
+"n1:Vehicle",
+"n1:WorkOrderNumber",
+"n1:WorkshopCalculation",
+"@Version"
+],
+"type": "object"
+},
+"n1:EstimateStatus": {
+"enum": [
+"Calculated",
+"Modified"
+],
+"type": "string"
+},
+"n1:EstimateVehicle": {
+"additionalProperties": false,
+"properties": {
+"n1:AlternativeIdentification": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ChassisNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:IsLeasing": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:MachineDamageVehicle": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"$ref": "#/definitions/n1:MachineDamageVehicle"
+}
+]
+},
+"n1:MakeNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MakeText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Mileage": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MileageUnit": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:MileageUnits"
+}
+},
+"type": "object"
+},
+"n1:ModelFamilyText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ModelNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:ModelText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ModelTextFromIntegration": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:ModelYear": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:NumberOfColors": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:NumberOfDoors": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherInfo": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:Owner": {
+"$ref": "#/definitions/n1:ContactCard"
+},
+"n1:PaintCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PaintColorBrand": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PaintManufacturerCode": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PaintType": {
+"additionalProperties":ber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:MaterialResultRowType": {
+"enum": [
+"SparePart",
+"OtherOperation",
+"AlternativitionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+}
+]
+},
+"n1:YearMonthOfConstructionTo": {
+"anyOf": [
+{
+"type": "null"
+},
+{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+}
+]
+}
+},
+"required": [
+"n1:ConstructionType",
+"n1:CylinderCapacityCcm",
+"n1:EngineCode",
+"n1:FuelType",
+"n1:ImpulsionType",
+"n1:ModelName",
+"n1:TypeName",
+"n1:YearMonthOfConstructionFrom",
+"n1:YearMonthOfConstructionTo"
+],
+"type": "object"
+},
+"n1:MaterialResult": {
+"additionalProperties": false,
+"properties": {
+"n1:AgeDeductionAmount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:Amount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:CurrentListPrice": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:Discount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:EconomyPart": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:EnteredListPrice": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:ExternalSystem": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:ExternalSystemId": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:IsUsedPart": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Join": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PartNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PartNumberMarked": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:PositionNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:Price": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:PriceGiven": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Quantity": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:RowType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:MaterialResultRowType"
+}
+},
+"type": "object"
+},
+"n1:ShortNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:SparePartGroupNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:SparePartGroupText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:SubstituteShortNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:Text": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:AgeDeductionAmount",
+"n1:Amount",
+"n1:CurrentListPrice",
+"n1:Discount",
+"n1:EconomyPart",
+"n1:EnteredListPrice",
+"n1:ExternalSystem",
+"n1:ExternalSystemId",
+"n1:IsUsedPart",
+"n1:Join",
+"n1:PartNumber",
+"n1:PartNumberMarked",
+"n1:PositionNumber",
+"n1:Price",
+"n1:PriceGiven",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:SparePartGroupNumber",
+"n1:SparePartGroupText",
+"n1:SubstituteShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:MaterialResultRowType": {
+"enum": [
+"SparePart",
+"OtherOperation",
+"AlternativePaintDecorStripe"
+],
+"type": "string"
+},
+"n1:MileageUnits": {
+"enum": [
+"Kilometer",
+"Hour"
+],
+"type": "string"
+},
+"n1:Note": {
+"additionalProperties": false,
+"properties": {
+"n1:NotesType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:NotesType"
+}
+},
+"type": "object"
+},
+"n1:Text": {nType",
+"n1:CylinderCapacityCcm",
+"n1:EngineCode",
+"n1:FuelType",
+"n1:ImpulsionType",
+"n1:ModelName",
+"n1:TypeName",
+"n1:YearMonthOfConstructionFrom",
+"n1:YearMonthOfConstructionTo"
+],
+"type": "object"
+},
+"n1:MaterialResult": {
+"additionalProperties": false,
+"properties": {
+"n1:AgeDeductionAmount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:Amount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:CurrentListPrice": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:Discount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:EconomyPart": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:EnteredListPrice": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:ExternalSystem": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:ExternalSystemId": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:IsUsedPart": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Join": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PartNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PartNumberMarked": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:PositionNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:Price": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:PriceGiven": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Quantity": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:RowType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:MaterialResultRowType"
+}
+},
+"type": "object"
+},
+"n1:ShortNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:SparePartGroupNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:SparePartGroupText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:SubstituteShortNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:Text": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:AgeDeductionAmount",
+"n1:Amount",
+"n1:CurrentListPrice",
+"n1:Discount",
+"n1:EconomyPart",
+"n1:EnteredListPrice",
+"n1:ExternalSystem",
+"n1:ExternalSystemId",
+"n1:IsUsedPart",
+"n1:Join",
+"n1:PartNumber",
+"n1:PartNumberMarked",
+"n1:PositionNumber",
+"n1:Price",
+"n1:PriceGiven",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:SparePartGroupNumber",
+"n1:SparePartGroupText",
+"n1:SubstituteShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:MaterialResultRowType": {
+"enum": [
+"SparePart",
+"OtherOperation",
+"AlternativePaintDecorStripe"
+],
+"type": "string"
+},
+"n1:MileageUnits": {
+"enum": [
+"Kilometer",
+"Hour"
+],
+"type": "string"
+},
+"n1:Note": {
+"additionalProperties": false,
+"properties": {
+"n1:NotesType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:NotesType"
+}
+},
+"type": "object"
+},
+"n1:Text": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:NotesType",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:NotesType": {
+"enum": [
+"None",
+"Summary",
+"Labour",
+"SparePart",
+"Paint",
+"SubJob",
+"Plastic",
+"OwnNotes",
+"InputData",
+"ApprovalRequestNotes",
+"Fe,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:Amount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:CurrentListPrice": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:Discount": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:EconomyPart": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:EnteredListPrice": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:ExternalSystem": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:ExternalSystemId": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:IsUsedPart": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Join": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PartNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:PartNumberMarked": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:PositionNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:Price": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:PriceGiven": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:boolean"
+}
+},
+"type": "object"
+},
+"n1:Quantity": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+},
+"n1:RowType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:MaterialResultRowType"
+}
+},
+"type": "object"
+},
+"n1:ShortNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:SparePartGroupNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:SparePartGroupText": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+},
+"n1:SubstituteShortNumber": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:Text": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:AgeDeductionAmount",
+"n1:Amount",
+"n1:CurrentListPrice",
+"n1:Discount",
+"n1:EconomyPart",
+"n1:EnteredListPrice",
+"n1:ExternalSystem",
+"n1:ExternalSystemId",
+"n1:IsUsedPart",
+"n1:Join",
+"n1:PartNumber",
+"n1:PartNumberMarked",
+"n1:PositionNumber",
+"n1:Price",
+"n1:PriceGiven",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:SparePartGroupNumber",
+"n1:SparePartGroupText",
+"n1:SubstituteShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:MaterialResultRowType": {
+"enum": [
+"SparePart",
+"OtherOperation",
+"AlternativePaintDecorStripe"
+],
+"type": "string"
+},
+"n1:MileageUnits": {
+"enum": [
+"Kilometer",
+"Hour"
+],
+"type": "string"
+},
+"n1:Note": {
+"additionalProperties": false,
+"properties": {
+"n1:NotesType": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/n1:NotesType"
+}
+},
+"type": "object"
+},
+"n1:Text": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:string"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:NotesType",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:NotesType": {
+"enum": [
+"None",
+"Summary",
+"Labour",
+"SparePart",
+"Paint",
+"SubJob",
+"Plastic",
+"OwnNotes",
+"InputData",
+"ApprovalRequestNotes",
+"FrameAlignment",
+"Customer"
+],
+"type": "string"
+},
+"n1:PaintBlendingType": {
+"enum": [
+"Unknown",
+"BlendingColorDependent",
+"BlendingAreaDependent"
+],
+"type": "string"
+},
+"n1:PaintRates": {
+"additionalProperties": false,
+"properties": {
+"n1:PaintLabourRate": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decim{
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PlasticWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:WorkLaidOutSum": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkAlignmentPeriods",
+"n1:BodyWorkRemoveInstallReplacePeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods",
+"n1:PlasticWorkPeriods",
+"n1:RustProtectionPeriods",
+"n1:WorkLaidOutSum"
+],
+"type": "object"
+},
+"n1:WorkshopInterestReasonType": {
+"enum": [
+"ForRepairing",
+"ForRecycling",
+"Other"
+],
+"type": "string"
+},
+"xs:base64Binary": {
+"type": "string"
+},
+"xs:boolean": {
+"type": "boolean"
+},
+"xs:date": {
+"type": "string"
+},
+"xs:dateTime": {
+"type": "string"
+},
+"xs:decimal": {
+"type": "number"
+},
+"xs:float": {
+"type": "number"
+},
+"xs:int": {
+"maximum": 2147483647,
+"minimum": -2147483648,
+"type": "integer"
+},
+"xs:long": {
+"maximum": 9223372036854775807,
+"minimum": -9223372036854775808,
+"type": "integer"
+},
+"xs:short": {
+"maximum": 32767,
+"minimum": -32768,
+"type": "integer"
+},
+"xs:string": {
+"type": "string"
+}
+},
+"description": "JSON Schema generated by XMLSpy v2017 rel. 3 (http://www.altova.com)",
+"properties": {
+"@xmlns:n1": {
+"default": "http://www.cab.se/schemas/estimate/sweden/8.0"
+},
+"@xmlns:xs": {
+"default": "http://www.w3.org/2001/XMLSchema"
+},
+"n1:Estimate": {
+"$ref": "#/definitions/.n1:Estimate"
+}
+},
+"type": "object"
+}uired": [
+"n1:Accessdegree",
+"n1:Amount",
+"n1:Area",
+"n1:OperationText",
+"n1:Periods",
+"n1:PositionNumber",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:WorkResultRowType": {
+"enum": [
+"AllowanceBodyRateAndAlignOperation",
+"AllowanceMechanicalOperation",
+"AllowanceOtherOperation",
+"AllowanceGlassOperation",
+"AllowanceRustProtection",
+"BodyAlignHeavy",
+"BodyAlignOtherOperation",
+"BodyAlignPeriods",
+"BodyAlignReInCustomPeriods",
+"BodyAlignReInPeriods",
+"FrameAlignment",
+"GeneralOperationOrReplaceCustomPeriodsBodyRate",
+"GeneralOperationOrReplaceCustomPeriodsGlass",
+"GeneralOperationOrReplaceCustomPeriodsMechanical",
+"GeneralOperationOrReplaceCustomPeriodsOther",
+"GeneralOperationBodyRate",
+"GeneralOperationGlass",
+"GeneralOperationMechanical",
+"GeneralOperationOther",
+"OtherOperationBodyRate",
+"OtherOperationMechanical",
+"OtherOperationOther",
+"OtherOperationGlass",
+"PaintReIn",
+"PaintRustProtection",
+"PaintRustProtectionD35",
+"PaintRustProtectionOtherOperation",
+"PlasticRepairData",
+"ReInAlign",
+"ReInPaint",
+"ReInPosition",
+"ReInCustomPeriodsBodyRate",
+"ReInCustomPeriodsGlass",
+"ReInCustomPeriodsMechanical",
+"ReInCustomPeriodsOther",
+"ReInPeriodsBodyRate",
+"ReInPeriodsGlass",
+"ReInPeriodsMechanical",
+"ReInPeriodsOther",
+"ReplacePeriodsBodyRate",
+"ReplacePeriodsGlass",
+"ReplacePeriodsMechanical",
+"ReplacePeriodsOther",
+"SheetMetalRepairArea",
+"SheetMetalrepairPeriods",
+"SheetMetalRepairOtherOperation",
+"SummarySubjobBodyRate",
+"SummarySubjobGlass",
+"SummarySubjobMechanical",
+"SummarySubjobOther",
+"WorkLaidOutOtherOperation",
+"WorkOperationBodyRate",
+"WorkOperationMechanical",
+"WorkOperationGlass",
+"WorkOperationOther"
+],
+"type": "string"
+},
+"n1:WorkResultSubTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyWorkAlignmentPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:BodyWorkRemoveInstallReplacePeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PlasticWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:WorkLaidOutSum": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkAlignmentPeriods",
+"n1:BodyWorkRemoveInstallReplacePeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods",
+"n1:PlasticWorkPeriods",
+"n1:RustProtectionPeriods",
+"n1:WorkLaidOutSum"
+],
+"type": "object"
+},
+"n1:WorkshopInterestReasonType": {
+"enum": [
+"ForRepairing",
+"ForRecycling",
+"Other"
+],
+"type": "string"
+},
+"xs:base64Binary": {
+"type": "string"
+},
+"xs:boolean": {
+"type": "boolean"
+},
+"xs:date": {
+"type": "string"
+},
+"xs:dateTime": {
+"type": "string"
+},
+"xs:decimal": {
+"type": "number"
+},
+"xs:float": {
+"type": "number"
+},
+"xs:int": {
+"maximum": 2147483647,
+"minimum": -2147483648,
+"type": "integer"
+},
+"xs:long": {
+"maximum": 9223372036854775807,
+"minimum": -9223372036854775808,
+"type": "integer"
+},
+"xs:short": {
+"maximum": 32767,
+"minimum": -32768,
+"type": "integer"
+},
+"xs:string": {
+"type": "string"
+}
+},
+"description": "JSON Schema generated by XMLSpy v2017 rel. 3 (http://www.altova.com)",
+"properties": {
+"@xmlns:n1": {
+"default": "http://www.cab.se/schemas/estimate/sweden/8.0"
+},
+"@xmlns:xs": {
+"default": "http://www.w3.org/2001/XMLSchema"
+},
+"n1:Estimate": {
+"$ref": "#/definitions/.n1:Estimate"
+}
+},
+"type": "object"
+}uired": [
+"n1:Accessdegree",
+"n1:Amount",
+"n1:Area",
+"n1:OperationText",
+"n1:Periods",
+"n1:PositionNumber",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:WorkResultRowType": {
+"enum": [
+"AllowanceBodyRateAndAlignOperation",
+"AllowanceMechanicalOperation",
+"AllowanceOtherOperation",
+"AllowanceGlassOperation",
+"AllowanceRustProtection",
+"BodyAlignHeavy",
+"BodyAlignOtherOperation",
+"BodyAlignPeriods",
+"BodyAlignReInCustomPeriods",
+"BodyAlignReInPeriods",
+"FrameAlignment",
+"GeneralOperationOrReplaceCustomPeriodsBodyRate",
+"GeneralOperationOrReplaceCustomPeriodsGlass",
+"GeneralOperationOrReplaceCustomPeriodsMechanical",
+"GeneralOperationOrReplaceCustomPeriodsOther",
+"GeneralOperationBodyRate",
+"GeneralOperationGlass",
+"GeneralOperationMechanical",
+"GeneralOperationOther",
+"OtherOperationBodyRate",
+"OtherOperationMechanical",
+"OtherOperationOther",
+"OtherOperationGlass",
+"PaintReIn",
+"PaintRustProtection",
+"PaintRustProtectionD35",
+"PaintRustProtectionOtherOperation",
+"PlasticRepairData",
+"ReInAlign",
+"ReInPaint",
+"ReInPosition",
+"ReInCustomPeriodsBodyRate",
+"ReInCustomPeriodsGlass",
+"ReInCustomPeriodsMechanical",
+"ReInCustomPeriodsOther",
+"ReInPeriodsBodyRate",
+"ReInPeriodsGlass",
+"ReInPeriodsMechanical",
+"ReInPeriodsOther",
+"ReplacePeriodsBodyRate",
+"ReplacePeriodsGlass",
+"ReplacePeriodsMechanical",
+"ReplacePeriodsOther",
+"SheetMetalRepairArea",
+"SheetMetalrepairPeriods",
+"SheetMetalRepairOtherOperation",
+"SummarySubjobBodyRate",
+"SummarySubjobGlass",
+"SummarySubjobMechanical",
+"SummarySubjobOther",
+"WorkLaidOutOtherOperation",
+"WorkOperationBodyRate",
+"WorkOperationMechanical",
+"WorkOperationGlass",
+"WorkOperationOther"
+],
+"type": "string"
+},
+"n1:WorkResultSubTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyWorkAlignmentPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:BodyWorkRemoveInstallReplacePeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PlasticWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:WorkLaidOutSum": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkAlignmentPeriods",
+"n1:BodyWorkRemoveInstallReplacePeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods",
+"n1:PlasticWorkPeriods",
+"n1:RustProtectionPeriods",
+"n1:WorkLaidOutSum"
+],
+"type": "object"
+},
+"n1:WorkshopInterestReasonType": {
+"enum": [
+"ForRepairing",
+"ForRecycling",
+"Other"
+],
+"type": "string"
+},
+"xs:base64Binary": {
+"type": "string"
+},
+"xs:boolean": {
+"type": "boolean"
+},
+"xs:date": {
+"type": "string"
+},
+"xs:dateTime": {
+"type": "string"
+},
+"xs:decimal": {
+"type": "number"
+},
+"xs:float": {
+"type": "number"
+},
+"xs:int": {
+"maximum": 2147483647,
+"minimum": -2147483648,
+"type": "integer"
+},
+"xs:long": {
+"maximum": 9223372036854775807,
+"minimum": -9223372036854775808,
+"type": "integer"
+},
+"xs:short": {
+"maximum": 32767,
+"minimum": -32768,
+"type": "integer"
+},
+"xs:string": {
+"type": "string"
+}
+},
+"description": "JSON Schema generated by XMLSpy v2017 rel. 3 (http://www.altova.com)",
+"properties": {
+"@xmlns:n1": {
+"default": "http://www.cab.se/schemas/estimate/sweden/8.0"
+},
+"@xmlns:xs": {
+"default": "http://www.w3.org/2001/XMLSchema"
+},
+"n1:Estimate": {
+"$ref": "#/definitions/.n1:Estimate"
+}
+},
+"type": "object"
+}uired": [
+"n1:Accessdegree",
+"n1:Amount",
+"n1:Area",
+"n1:OperationText",
+"n1:Periods",
+"n1:PositionNumber",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:WorkResultRowType": {
+"enum": [
+"AllowanceBodyRateAndAlignOperation",
+"AllowanceMechanicalOperation",
+"AllowanceOtherOperation",
+"AllowanceGlassOperation",
+"AllowanceRustProtection",
+"BodyAlignHeavy",
+"BodyAlignOtherOperation",
+"BodyAlignPeriods",
+"BodyAlignReInCustomPeriods",
+"BodyAlignReInPeriods",
+"FrameAlignment",
+"GeneralOperationOrReplaceCustomPeriodsBodyRate",
+"GeneralOperationOrReplaceCustomPeriodsGlass",
+"GeneralOperationOrReplaceCustomPeriodsMechanical",
+"GeneralOperationOrReplaceCustomPeriodsOther",
+"GeneralOperationBodyRate",
+"GeneralOperationGlass",
+"GeneralOperationMechanical",
+"GeneralOperationOther",
+"OtherOperationBodyRate",
+"OtherOperationMechanical",
+"OtherOperationOther",
+"OtherOperationGlass",
+"PaintReIn",
+"PaintRustProtection",
+"PaintRustProtectionD35",
+"PaintRustProtectionOtherOperation",
+"PlasticRepairData",
+"ReInAlign",
+"ReInPaint",
+"ReInPosition",
+"ReInCustomPeriodsBodyRate",
+"ReInCustomPeriodsGlass",
+"ReInCustomPeriodsMechanical",
+"ReInCustomPeriodsOther",
+"ReInPeriodsBodyRate",
+"ReInPeriodsGlass",
+"ReInPeriodsMechanical",
+"ReInPeriodsOther",
+"ReplacePeriodsBodyRate",
+"ReplacePeriodsGlass",
+"ReplacePeriodsMechanical",
+"ReplacePeriodsOther",
+"SheetMetalRepairArea",
+"SheetMetalrepairPeriods",
+"SheetMetalRepairOtherOperation",
+"SummarySubjobBodyRate",
+"SummarySubjobGlass",
+"SummarySubjobMechanical",
+"SummarySubjobOther",
+"WorkLaidOutOtherOperation",
+"WorkOperationBodyRate",
+"WorkOperationMechanical",
+"WorkOperationGlass",
+"WorkOperationOther"
+],
+"type": "string"
+},
+"n1:WorkResultSubTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyWorkAlignmentPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:BodyWorkRemoveInstallReplacePeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PlasticWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:WorkLaidOutSum": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkAlignmentPeriods",
+"n1:BodyWorkRemoveInstallReplacePeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods",
+"n1:PlasticWorkPeriods",
+"n1:RustProtectionPeriods",
+"n1:WorkLaidOutSum"
+],
+"type": "object"
+},
+"n1:WorkshopInterestReasonType": {
+"enum": [
+"ForRepairing",
+"ForRecycling",
+"Other"
+],
+"type": "string"
+},
+"xs:base64Binary": {
+"type": "string"
+},
+"xs:boolean": {
+"type": "boolean"
+},
+"xs:date": {
+"type": "string"
+},
+"xs:dateTime": {
+"type": "string"
+},
+"xs:decimal": {
+"type": "number"
+},
+"xs:float": {
+"type": "number"
+},
+"xs:int": {
+"maximum": 2147483647,
+"minimum": -2147483648,
+"type": "integer"
+},
+"xs:long": {
+"maximum": 9223372036854775807,
+"minimum": -9223372036854775808,
+"type": "integer"
+},
+"xs:short": {
+"maximum": 32767,
+"minimum": -32768,
+"type": "integer"
+},
+"xs:string": {
+"type": "string"
+}
+},
+"description": "JSON Schema generated by XMLSpy v2017 rel. 3 (http://www.altova.com)",
+"properties": {
+"@xmlns:n1": {
+"default": "http://www.cab.se/schemas/estimate/sweden/8.0"
+},
+"@xmlns:xs": {
+"default": "http://www.w3.org/2001/XMLSchema"
+},
+"n1:Estimate": {
+"$ref": "#/definitions/.n1:Estimate"
+}
+},
+"type": "object"
+}uired": [
+"n1:Accessdegree",
+"n1:Amount",
+"n1:Area",
+"n1:OperationText",
+"n1:Periods",
+"n1:PositionNumber",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:WorkResultRowType": {
+"enum": [
+"AllowanceBodyRateAndAlignOperation",
+"AllowanceMechanicalOperation",
+"AllowanceOtherOperation",
+"AllowanceGlassOperation",
+"AllowanceRustProtection",
+"BodyAlignHeavy",
+"BodyAlignOtherOperation",
+"BodyAlignPeriods",
+"BodyAlignReInCustomPeriods",
+"BodyAlignReInPeriods",
+"FrameAlignment",
+"GeneralOperationOrReplaceCustomPeriodsBodyRate",
+"GeneralOperationOrReplaceCustomPeriodsGlass",
+"GeneralOperationOrReplaceCustomPeriodsMechanical",
+"GeneralOperationOrReplaceCustomPeriodsOther",
+"GeneralOperationBodyRate",
+"GeneralOperationGlass",
+"GeneralOperationMechanical",
+"GeneralOperationOther",
+"OtherOperationBodyRate",
+"OtherOperationMechanical",
+"OtherOperationOther",
+"OtherOperationGlass",
+"PaintReIn",
+"PaintRustProtection",
+"PaintRustProtectionD35",
+"PaintRustProtectionOtherOperation",
+"PlasticRepairData",
+"ReInAlign",
+"ReInPaint",
+"ReInPosition",
+"ReInCustomPeriodsBodyRate",
+"ReInCustomPeriodsGlass",
+"ReInCustomPeriodsMechanical",
+"ReInCustomPeriodsOther",
+"ReInPeriodsBodyRate",
+"ReInPeriodsGlass",
+"ReInPeriodsMechanical",
+"ReInPeriodsOther",
+"ReplacePeriodsBodyRate",
+"ReplacePeriodsGlass",
+"ReplacePeriodsMechanical",
+"ReplacePeriodsOther",
+"SheetMetalRepairArea",
+"SheetMetalrepairPeriods",
+"SheetMetalRepairOtherOperation",
+"SummarySubjobBodyRate",
+"SummarySubjobGlass",
+"SummarySubjobMechanical",
+"SummarySubjobOther",
+"WorkLaidOutOtherOperation",
+"WorkOperationBodyRate",
+"WorkOperationMechanical",
+"WorkOperationGlass",
+"WorkOperationOther"
+],
+"type": "string"
+},
+"n1:WorkResultSubTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyWorkAlignmentPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:BodyWorkRemoveInstallReplacePeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PlasticWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:WorkLaidOutSum": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkAlignmentPeriods",
+"n1:BodyWorkRemoveInstallReplacePeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods",
+"n1:PlasticWorkPeriods",
+"n1:RustProtectionPeriods",
+"n1:WorkLaidOutSum"
+],
+"type": "object"
+},
+"n1:WorkshopInterestReasonType": {
+"enum": [
+"ForRepairing",
+"ForRecycling",
+"Other"
+],
+"type": "string"
+},
+"xs:base64Binary": {
+"type": "string"
+},
+"xs:boolean": {
+"type": "boolean"
+},
+"xs:date": {
+"type": "string"
+},
+"xs:dateTime": {
+"type": "string"
+},
+"xs:decimal": {
+"type": "number"
+},
+"xs:float": {
+"type": "number"
+},
+"xs:int": {
+"maximum": 2147483647,
+"minimum": -2147483648,
+"type": "integer"
+},
+"xs:long": {
+"maximum": 9223372036854775807,
+"minimum": -9223372036854775808,
+"type": "integer"
+},
+"xs:short": {
+"maximum": 32767,
+"minimum": -32768,
+"type": "integer"
+},
+"xs:string": {
+"type": "string"
+}
+},
+"description": "JSON Schema generated by XMLSpy v2017 rel. 3 (http://www.altova.com)",
+"properties": {
+"@xmlns:n1": {
+"default": "http://www.cab.se/schemas/estimate/sweden/8.0"
+},
+"@xmlns:xs": {
+"default": "http://www.w3.org/2001/XMLSchema"
+},
+"n1:Estimate": {
+"$ref": "#/definitions/.n1:Estimate"
+}
+},
+"type": "object"
+}uired": [
+"n1:Accessdegree",
+"n1:Amount",
+"n1:Area",
+"n1:OperationText",
+"n1:Periods",
+"n1:PositionNumber",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:WorkResultRowType": {
+"enum": [
+"AllowanceBodyRateAndAlignOperation",
+"AllowanceMechanicalOperation",
+"AllowanceOtherOperation",
+"AllowanceGlassOperation",
+"AllowanceRustProtection",
+"BodyAlignHeavy",
+"BodyAlignOtherOperation",
+"BodyAlignPeriods",
+"BodyAlignReInCustomPeriods",
+"BodyAlignReInPeriods",
+"FrameAlignment",
+"GeneralOperationOrReplaceCustomPeriodsBodyRate",
+"GeneralOperationOrReplaceCustomPeriodsGlass",
+"GeneralOperationOrReplaceCustomPeriodsMechanical",
+"GeneralOperationOrReplaceCustomPeriodsOther",
+"GeneralOperationBodyRate",
+"GeneralOperationGlass",
+"GeneralOperationMechanical",
+"GeneralOperationOther",
+"OtherOperationBodyRate",
+"OtherOperationMechanical",
+"OtherOperationOther",
+"OtherOperationGlass",
+"PaintReIn",
+"PaintRustProtection",
+"PaintRustProtectionD35",
+"PaintRustProtectionOtherOperation",
+"PlasticRepairData",
+"ReInAlign",
+"ReInPaint",
+"ReInPosition",
+"ReInCustomPeriodsBodyRate",
+"ReInCustomPeriodsGlass",
+"ReInCustomPeriodsMechanical",
+"ReInCustomPeriodsOther",
+"ReInPeriodsBodyRate",
+"ReInPeriodsGlass",
+"ReInPeriodsMechanical",
+"ReInPeriodsOther",
+"ReplacePeriodsBodyRate",
+"ReplacePeriodsGlass",
+"ReplacePeriodsMechanical",
+"ReplacePeriodsOther",
+"SheetMetalRepairArea",
+"SheetMetalrepairPeriods",
+"SheetMetalRepairOtherOperation",
+"SummarySubjobBodyRate",
+"SummarySubjobGlass",
+"SummarySubjobMechanical",
+"SummarySubjobOther",
+"WorkLaidOutOtherOperation",
+"WorkOperationBodyRate",
+"WorkOperationMechanical",
+"WorkOperationGlass",
+"WorkOperationOther"
+],
+"type": "string"
+},
+"n1:WorkResultSubTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyWorkAlignmentPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:BodyWorkRemoveInstallReplacePeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PlasticWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:WorkLaidOutSum": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkAlignmentPeriods",
+"n1:BodyWorkRemoveInstallReplacePeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods",
+"n1:PlasticWorkPeriods",
+"n1:RustProtectionPeriods",
+"n1:WorkLaidOutSum"
+],
+"type": "object"
+},
+"n1:WorkshopInterestReasonType": {
+"enum": [
+"ForRepairing",
+"ForRecycling",
+"Other"
+],
+"type": "string"
+},
+"xs:base64Binary": {
+"type": "string"
+},
+"xs:boolean": {
+"type": "boolean"
+},
+"xs:date": {
+"type": "string"
+},
+"xs:dateTime": {
+"type": "string"
+},
+"xs:decimal": {
+"type": "number"
+},
+"xs:float": {
+"type": "number"
+},
+"xs:int": {
+"maximum": 2147483647,
+"minimum": -2147483648,
+"type": "integer"
+},
+"xs:long": {
+"maximum": 9223372036854775807,
+"minimum": -9223372036854775808,
+"type": "integer"
+},
+"xs:short": {
+"maximum": 32767,
+"minimum": -32768,
+"type": "integer"
+},
+"xs:string": {
+"type": "string"
+}
+},
+"description": "JSON Schema generated by XMLSpy v2017 rel. 3 (http://www.altova.com)",
+"properties": {
+"@xmlns:n1": {
+"default": "http://www.cab.se/schemas/estimate/sweden/8.0"
+},
+"@xmlns:xs": {
+"default": "http://www.w3.org/2001/XMLSchema"
+},
+"n1:Estimate": {
+"$ref": "#/definitions/.n1:Estimate"
+}
+},
+"type": "object"
+}uired": [
+"n1:Accessdegree",
+"n1:Amount",
+"n1:Area",
+"n1:OperationText",
+"n1:Periods",
+"n1:PositionNumber",
+"n1:Quantity",
+"n1:RowType",
+"n1:ShortNumber",
+"n1:Text"
+],
+"type": "object"
+},
+"n1:WorkResultRowType": {
+"enum": [
+"AllowanceBodyRateAndAlignOperation",
+"AllowanceMechanicalOperation",
+"AllowanceOtherOperation",
+"AllowanceGlassOperation",
+"AllowanceRustProtection",
+"BodyAlignHeavy",
+"BodyAlignOtherOperation",
+"BodyAlignPeriods",
+"BodyAlignReInCustomPeriods",
+"BodyAlignReInPeriods",
+"FrameAlignment",
+"GeneralOperationOrReplaceCustomPeriodsBodyRate",
+"GeneralOperationOrReplaceCustomPeriodsGlass",
+"GeneralOperationOrReplaceCustomPeriodsMechanical",
+"GeneralOperationOrReplaceCustomPeriodsOther",
+"GeneralOperationBodyRate",
+"GeneralOperationGlass",
+"GeneralOperationMechanical",
+"GeneralOperationOther",
+"OtherOperationBodyRate",
+"OtherOperationMechanical",
+"OtherOperationOther",
+"OtherOperationGlass",
+"PaintReIn",
+"PaintRustProtection",
+"PaintRustProtectionD35",
+"PaintRustProtectionOtherOperation",
+"PlasticRepairData",
+"ReInAlign",
+"ReInPaint",
+"ReInPosition",
+"ReInCustomPeriodsBodyRate",
+"ReInCustomPeriodsGlass",
+"ReInCustomPeriodsMechanical",
+"ReInCustomPeriodsOther",
+"ReInPeriodsBodyRate",
+"ReInPeriodsGlass",
+"ReInPeriodsMechanical",
+"ReInPeriodsOther",
+"ReplacePeriodsBodyRate",
+"ReplacePeriodsGlass",
+"ReplacePeriodsMechanical",
+"ReplacePeriodsOther",
+"SheetMetalRepairArea",
+"SheetMetalrepairPeriods",
+"SheetMetalRepairOtherOperation",
+"SummarySubjobBodyRate",
+"SummarySubjobGlass",
+"SummarySubjobMechanical",
+"SummarySubjobOther",
+"WorkLaidOutOtherOperation",
+"WorkOperationBodyRate",
+"WorkOperationMechanical",
+"WorkOperationGlass",
+"WorkOperationOther"
+],
+"type": "string"
+},
+"n1:WorkResultSubTotals": {
+"additionalProperties": false,
+"properties": {
+"n1:BodyWorkAlignmentPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:BodyWorkRemoveInstallReplacePeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:GlassWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:MechanicalWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:OtherWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:PlasticWorkPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:RustProtectionPeriods": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:int"
+}
+},
+"type": "object"
+},
+"n1:WorkLaidOutSum": {
+"additionalProperties": false,
+"properties": {
+"$": {
+"$ref": "#/definitions/xs:decimal"
+}
+},
+"type": "object"
+}
+},
+"required": [
+"n1:BodyWorkAlignmentPeriods",
+"n1:BodyWorkRemoveInstallReplacePeriods",
+"n1:GlassWorkPeriods",
+"n1:MechanicalWorkPeriods",
+"n1:OtherWorkPeriods",
+"n1:PlasticWorkPeriods",
+"n1:RustProtectionPeriods",
+"n1:WorkLaidOutSum"
+],
+"type": "object"
+},
+"n1:WorkshopInterestReasonType": {
+"enum": [
+"ForRepairing",
+"ForRecycling",
+"Other"
+],
+"type": "string"
+},
+"xs:base64Binary": {
+"type": "string"
+},
+"xs:boolean": {
+"type": "boolean"
+},
+"xs:date": {
+"type": "string"
+},
+"xs:dateTime": {
+"type": "string"
+},
+"xs:decimal": {
+"type": "number"
+},
+"xs:float": {
+"type": "number"
+},
+"xs:int": {
+"maximum": 2147483647,
+"minimum": -2147483648,
+"type": "integer"
+},
+"xs:long": {
+"maximum": 9223372036854775807,
+"minimum": -9223372036854775808,
+"type": "integer"
+},
+"xs:short": {
+"maximum": 32767,
+"minimum": -32768,
+"type": "integer"
+},
+"xs:string": {
+"type": "string"
+}
+},
+"description": "JSON Schema generated by XMLSpy v2017 rel. 3 (http://www.altova.com)",
+"properties": {
+"@xmlns:n1": {
+"default": "http://www.cab.se/schemas/estimate/sweden/8.0"
+},
+"@xmlns:xs": {
+"default": "http://www.w3.org/2001/XMLSchema"
+},
+"n1:Estimate": {
+"$ref": "#/definitions/.n1:Estimate"
+}
+},
+"type": "object"
+}

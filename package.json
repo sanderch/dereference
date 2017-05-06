@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/sanderch/dereference/issues"
   },
-  "homepage": "https://github.com/sanderch/dereference#readme"
+  "homepage": "https://github.com/sanderch/dereference#readme",
+  "dependencies": {
+    "json-schema-ref-parser": "^3.1.2"
+  }
 }
