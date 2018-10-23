@@ -1,6 +1,6 @@
 var $RefParser = require('json-schema-ref-parser');
 var fs = require('fs');
-var file1 = fs.readFileSync('codan.policy.schema2.json', 'utf8');
+var file1 = fs.readFileSync('c.policy.schema2.json', 'utf8');
 
 // console.log(file1);
 
