@@ -1,8 +1,22 @@
+if (!process.argv[2]){
+	console.log('Emergency exit! first parameter "source" not specified.')
+	return process.exit(0);
+} else {
+	console.log(`using '${process.argv[2]}' as a source`)
+}
+
+var destination = 'dereferenced.json';
+
+if (process.argv[3]){
+	destination = process.argv[3];
+	console.log(`destination set to: '${destination}'`);
+} else {
+	console.log(`using default destination: '${destination}'`);
+}
+
 var $RefParser = require('json-schema-ref-parser');
 var fs = require('fs');
-var file1 = fs.readFileSync('c.policy.schema2.json', 'utf8');
-
-// console.log(file1);
+var file1 = fs.readFileSync(process.argv[2], 'utf8');
 
 var mySchema = JSON.parse(file1);
 
@@ -29,7 +43,7 @@ $RefParser.dereference(mySchema)
 	});
     cache = null;
 
-    fs.writeFile('dereferenced.json', newSchemaTxt, 'utf8', function(){
+    fs.writeFile(destination, newSchemaTxt, 'utf8', function(){
 		console.log('new file written!');
 	});
   })
