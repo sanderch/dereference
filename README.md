@@ -6,5 +6,5 @@ Build
 
 # Usage
 ```
-node dereference input.schema.json
+node dereference input.schema.json output.schema.json
 ```
