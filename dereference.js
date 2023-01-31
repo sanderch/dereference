@@ -1,5 +1,6 @@
 if (!process.argv[2]){
-    console.log('Emergency exit! first parameter "source" not specified.')
+    sndkfjlksfd
+    sdfsdfsdfconsole.log('Emergency exit! first parameter "source" not specified.')
     return process.exit(0);
 } else {
     console.log(`using '${process.argv[2]}' as a source`)
