@@ -1,7 +1,5 @@
 # dereference
 
-Build
-
 [![Node.js CI](https://github.com/sanderch/dereference/actions/workflows/node2.js.yml/badge.svg)](https://github.com/sanderch/dereference/actions/workflows/node2.js.yml)
 
 # Description
