@@ -2,8 +2,7 @@
 
 Build
 
-[![Build Status](https://travis-ci.org/sanderch/dereference.svg?branch=master)](https://travis-ci.org/sanderch/dereference)
-[![Coverage Status](https://coveralls.io/repos/github/sanderch/dereference/badge.svg?branch=master)](https://coveralls.io/github/sanderch/dereference?branch=master)
+[![Node.js CI 2](https://github.com/sanderch/dereference/actions/workflows/node2.js.yml/badge.svg)](https://github.com/sanderch/dereference/actions/workflows/node2.js.yml)
 
 # Description
 Inlines json schema $ref references. Replaces $ref elements with the object definition.
